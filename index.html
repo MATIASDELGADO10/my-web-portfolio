@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa </title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Ana Sayfa</a></li>
+                <li><a href="hakkinda.html">Hakkında</a></li>
+                <li><a href="galeri.html">Galeri / İstatistik</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Geleceğin Yönetim Bilişim Sistemleri Uzmanı</h1>
+            <p>Veri analitiği, SAP sistemleri ve modern web teknolojileri ile iş dünyasına teknolojik çözümler üretiyorum.</p>
+            <button id="btn-Detay">Daha Fazla Bilgi Göster</button>
+            <p id="ek-bilgi" class="gizli">Şu an temel seviyede kodlama biliyorum ve 1 sene içerisinde sektörde aktif bir rol alarak işe girmeyi hedefliyorum!</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <h2 class="section-title">Odak Alanlarım</h2>
+        <div class="kart-container">
+            <article class="kart">
+                <h3>Veri Bilimi</h3>
+                <p>Verileri stratejik kararlara dönüştürmek için Python, SQL ve veri madenciliği teknikleri üzerine çalışıyorum.</p>
+            </article>
+            <article class="kart">
+                <h3>SAP & İş Analizi</h3>
+                <p>Kurumsal kaynak planlaması (ERP) süreçleri ve iş analizi metodolojileri ile süreç optimizasyonu hedefliyorum.</p>
+            </article>
+            <article class="kart" id="dinamik-kart">
+                <h3>Web Geliştirme</h3>
+                <p>HTML5, CSS3 ve JavaScript kullanarak dinamik, modern ve kullanıcı dostu arayüzler tasarlıyorum.</p>
+            </article>
+        </div>
+
+        <section class="dinamik-alan">
+            <h3>Çalışma Planıma Yeni Hedef Ekle</h3>
+            <div class="liste-ekle-box">
+                <input type="text" id="yeni-yetenek-input" placeholder="Örn: Python Veri Analizi, SAP MM Modülü...">
+                <button id="btn-Ekle">Listeye Ekle</button>
+            </div>
+            <ul id="yetenek-listesi">
+                <li>İleri Seviye SQL Sorguları Çalışılacak</li>
+                <li>Portfolyo Web Sitesi Tamamlanacak</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Tüm Hakları Saklıdır. </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim </title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkinda.html">Hakkında</a></li>
+                <li><a href="galeri.html">Galeri / İstatistik</a></li>
+                <li><a href="iletisim.html" class="active">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Benimle İletişime Geçin</h1>
+        <p>Proje ortaklıkları, staj veya iş teklifleri için aşağıdaki formu eksiksiz doldurabilirsiniz.</p>
+
+        <form action="#" method="post" class="iletisim-formu">
+
+            <fieldset>
+                <legend>Kişisel Bilgileriniz</legend>
+
+                <div class="form-grup">
+                    <label for="ad-soyad">Adınız Soyadınız:</label>
+                    <input type="text" id="ad-soyad" name="ad-soyad" required placeholder="Örn: Ahmet Yılmaz"> </div>
+
+                <div class="form-grup">
+                    <label for="eposta">E-posta Adresiniz:</label>
+                    <input type="email" id="eposta" name="eposta" required placeholder="isim@ornek.com"> </div>
+
+                <div class="form-grup">
+                    <label for="telefon">Telefon Numaranız:</label>
+                    <input type="tel" id="telefon" name="telefon" placeholder="05XX XXX XX XX">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>İletişim Nedeni ve İlgi Alanları</legend>
+
+                <div class="form-grup">
+                    <label for="konu-secimi">İletişim Amacı:</label>
+                    <select id="konu-secimi" name="konu-secimi" required> <option value="">Lütfen Seçiniz...</option>
+                        <optgroup label="Kariyer Fırsatları">
+                            <option value="staj">Staj Teklifi</option>
+                            <option value="is">Tam Zamanlı İş Teklifi</option>
+                        </optgroup>
+                        <optgroup label="Akademik / Proje">
+                            <option value="proje">Ortak Proje Geliştirme</option>
+                            <option value="bilgi">Genel Bilgi Alışverişi</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <label>Beni Nereden Duydunuz?</label>
+                    <div class="secenekler">
+                        <input type="radio" id="kaynak-linkedin" name="kaynak" value="linkedin">
+                        <label for="kaynak-linkedin">LinkedIn</label>
+
+                        <input type="radio" id="kaynak-github" name="kaynak" value="github">
+                        <label for="kaynak-github">GitHub</label>
+
+                        <input type="radio" id="kaynak-okul" name="kaynak" value="okul">
+                        <label for="kaynak-okul">Üniversite / Okul</label>
+                    </div>
+                </div>
+
+                <div class="form-grup">
+                    <label>İlgilendiğiniz Pozisyon Alanları:</label>
+                    <div class="secenekler">
+                        <input type="checkbox" id="alan-sap" name="alanlar" value="sap">
+                        <label for="alan-sap">SAP Danışmanlığı</label>
+
+                        <input type="checkbox" id="alan-veri" name="alanlar" value="veri">
+                        <label for="alan-veri">Veri Bilimi / Analitiği</label>
+
+                        <input type="checkbox" id="alan-web" name="alanlar" value="web">
+                        <label for="alan-web">Full-Stack Web Geliştirme</label>
+                    </div>
+                </div>
+
+                <div class="form-grup">
+                    <label for="mesaj">Mesajınız:</label>
+                    <textarea id="mesaj" name="mesaj" rows="5" placeholder="Mesajınızı buraya yazabilirsiniz..."></textarea>
+                </div>
+            </fieldset>
+
+            <div class="form-butonlar">
+                <button type="submit" class="btn-gonder" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;">Formu Gönder</button>
+                <button type="reset" class="btn-sifirla" style="background-color: #dc3545; color: white; padding: 10px 20px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; margin-left: 10px;">Temizle</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Tüm Hakları Saklıdır. </p>
+    </footer>
+
+</body>
+
+</html>
